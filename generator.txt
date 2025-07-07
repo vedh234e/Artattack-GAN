@@ -1,0 +1,28 @@
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense (Dense)                (None, 4096)              413696
+reshape (Reshape)            (None, 4, 4, 256)         0
+up_sampling2d (UpSampling2D) (None, 8, 8, 256)         0
+conv2d (Conv2D)              (None, 8, 8, 256)         590080
+batch_normalization (BatchN) (None, 8, 8, 256)         1024
+activation (Activation)      (None, 8, 8, 256)         0
+up_sampling2d_1              (None, 16, 16, 256)       0
+conv2d_1                     (None, 16, 16, 256)       590080
+batch_normalization_1        (None, 16, 16, 256)       1024
+activation_1                 (None, 16, 16, 256)       0
+up_sampling2d_2              (None, 32, 32, 256)       0
+conv2d_2                     (None, 32, 32, 256)       590080
+batch_normalization_2        (None, 32, 32, 256)       1024
+activation_2                 (None, 32, 32, 256)       0
+up_sampling2d_3              (None, 64, 64, 256)       0
+conv2d_3                     (None, 64, 64, 128)       295040
+batch_normalization_3        (None, 64, 64, 128)       512
+activation_3                 (None, 64, 64, 128)       0
+conv2d_4                     (None, 64, 64, 3)         3459
+activation_4                 (None, 64, 64, 3)         0
+=================================================================
+Total params: 2,486,019
+Trainable params: 2,484,227
+Non-trainable params: 1,792

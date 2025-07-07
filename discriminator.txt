@@ -1,0 +1,30 @@
+Model: "sequential_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+conv2d_5 (Conv2D)            (None, 32, 32, 32)        896
+leaky_re_lu (LeakyReLU)      (None, 32, 32, 32)        0
+dropout (Dropout)            (None, 32, 32, 32)        0
+conv2d_6                     (None, 16, 16, 64)        18496
+zero_padding2d               (None, 17, 17, 64)        0
+batch_normalization_4        (None, 17, 17, 64)        256
+leaky_re_lu_1                (None, 17, 17, 64)        0
+dropout_1                    (None, 17, 17, 64)        0
+conv2d_7                     (None, 9, 9, 128)         73856
+batch_normalization_5        (None, 9, 9, 128)         512
+leaky_re_lu_2                (None, 9, 9, 128)         0
+dropout_2                    (None, 9, 9, 128)         0
+conv2d_8                     (None, 9, 9, 256)         295168
+batch_normalization_6        (None, 9, 9, 256)         1024
+leaky_re_lu_3                (None, 9, 9, 256)         0
+dropout_3                    (None, 9, 9, 256)         0
+conv2d_9                     (None, 9, 9, 512)         1180160
+batch_normalization_7        (None, 9, 9, 512)         2048
+leaky_re_lu_4                (None, 9, 9, 512)         0
+dropout_4                    (None, 9, 9, 512)         0
+flatten                      (None, 41472)             0
+dense_1                      (None, 1)                 41473
+=================================================================
+Total params: 1,613,889
+Trainable params: 1,611,969
+Non-trainable params: 1,920
